@@ -24,8 +24,8 @@ This project uses [Poetry](https://python-poetry.org/) for dependency management
 ### Setup Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
-   cd <repo-name>
+   git clone https://github.com/Liz490/Heavy_Hitter_Oracles.git
+   cd Heavy_Hitter_Oracles
    ```
 
 2. Install dependencies using Poetry:
@@ -36,10 +36,9 @@ This project uses [Poetry](https://python-poetry.org/) for dependency management
    ```
 
 
-3. Activate the virtual environment:
-   ```bash
-   poetry shell
-   ```
+3. Set Interpreter (Optional):
+    
+    Set the interpreter to the virtual environment created. 
 
 ## 📊 Datasets
 We compare the different variations of the oracles on the same three datasets as in the original [CountSketch++ paper](https://arxiv.org/pdf/2312.07535). 
@@ -48,11 +47,11 @@ Two of them – [AOL](https://www.kaggle.com/datasets/dineshydv/aol-user-sessio
 For our experiments, we use the data from the $74^{th}$ day of the recording of the AOL dataset and on the first minute of the recordings from January 2019 of the CAIDA dataset collection.
 
 
-## 🔄 Reproduction ## 
+## 🔄 Reproduce Experiments ## 
 To reproduce our results, run the following command in the root directory of this repository: 
 
 ```bash
-python main.py
+poetry run python main.py
 ```
 
 
