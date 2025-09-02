@@ -50,8 +50,8 @@ class Exp_2_1(Experiment):
 
             abs_taus = np.array([(np.log2(S)/S)*c*setup.N for c in setup.threshConsts])
 
-            CountSketchPlusPlus = CountSketchPlusPlus(setup.n, S, setup.seed)
-            uerrs, werrs = CountSketchPlusPlus.run_and_evaluate_sketch_on_freq_vector(setup.sorted_freq_vector, abs_taus)
+            CountSketchPlusPlus_instance = CountSketchPlusPlus(setup.n, S, setup.seed)
+            uerrs, werrs = CountSketchPlusPlus_instance.run_and_evaluate_sketch_on_freq_vector(setup.sorted_freq_vector, abs_taus)
             for i, c in enumerate(setup.threshConsts):
                 c= float(c)
                 self.uerrs_CountSketchPlusPlus_by_tau[c].append(float(uerrs[i]))
