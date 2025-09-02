@@ -1,0 +1,15 @@
+n: 326359
+N: 29922873
+S_array:
+- 133
+- 266
+- 665
+- 1330
+- 2660
+threshConsts:
+- 5
+- 8
+- 11
+numPreds: 19
+seed: 336
+execution time: 2:05:51(HH:MM:SS)
